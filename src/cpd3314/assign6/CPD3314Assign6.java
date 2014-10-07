@@ -137,10 +137,10 @@ public class CPD3314Assign6 {
             sa.withdraw(withdrawal);
             sa.calculateInterest();
         }
-        System.out.printf("Ending Balance: %.2f\n", sa.getEndingBalance());
-        System.out.println("Total Deposits: %.2f\n", sa.getTotalDeposits());
-        System.out.println("Total Withdrawals: %.2f\n", sa.getTotalWithdrawals());
-        System.out.println("Total Interst: %.2f\n", sa.getTotalInterest());
+        System.out.printf("Ending Balance: %.2f\n", sa.getBalance());
+        System.out.printf("Total Deposits: %.2f\n", sa.getTotalDeposits());
+        System.out.printf("Total Withdrawals: %.2f\n", sa.getTotalWithdrawals());
+        System.out.printf("Total Interst: %.2f\n", sa.getTotalInterest());
     }
 
     public void doExercise11() throws IOException {
@@ -158,7 +158,7 @@ public class CPD3314Assign6 {
             sa.withdraw(withdrawals.nextDouble());
         }
         sa.calculateInterest();
-        System.out.printf("Ending Balance: %.2f\n", sa.getEndingBalance());
-        System.out.println("Total Interst: %.2f\n", sa.getTotalInterest());
+        System.out.printf("Ending Balance: %.2f\n", sa.getBalance());
+        System.out.printf("Total Interst: %.2f\n", sa.getTotalInterest());
     }
 }
