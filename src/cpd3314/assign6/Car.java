@@ -19,7 +19,7 @@
  * Gaddis, T. (2013). Starting Out with Java: From Control Structures through  
  * Objects. (5th ed.). Upper Saddle River, NJ: Pearson Education. 
  * ISBN: 978-0-13-285583-9 
- */ 
+ */
 
 /* Exercise #2 - Car Class
  * 
@@ -44,12 +44,45 @@
  * brake method, get the current speed of the car and display it.
  * - Gaddis pg. 400-1
  */
-
 package cpd3314.assign6;
 
 /**
- * @author <ENTER YOUR NAME HERE>
+ * @author YATIN PATEL
  */
 public class Car {
+
     // TODO: Build the Car Class Here
+
+    private int YearModel;
+    private String make;
+    private int speed;
+
+    
+    public Car( int model,String make1)
+    {
+       
+        YearModel = model;
+        make = make1;
+        speed = 0;
+    }
+        public int getYearModel() {
+        return YearModel;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+  public int accelerate() {
+    speed = speed + 5;
+    return speed;
+  }
+   public int brake() {
+    speed = speed - 5;
+    return speed;
+  }
 }

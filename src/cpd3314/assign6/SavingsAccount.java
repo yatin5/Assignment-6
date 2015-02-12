@@ -42,8 +42,66 @@
 package cpd3314.assign6;
 
 /**
- * @author <ENTER YOUR NAME HERE>
+ * @author Yatin Patel
  */
 public class SavingsAccount {
-    // TODO: Build the SavingsAccount Class here
+    // TODO: Build the SavingsAccount Class 
+    double interest;
+    double balance;
+    public double getInterest() {
+        return interest;
+    }
+
+    public void setInterest(double interest) {
+        this.interest = interest;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    
+    
+    public SavingsAccount(double annualinterest, double startingbalance)
+    { 
+     interest =  annualinterest;
+     balance = startingbalance;
+    }
+   public double withdraw(double withdrawal)
+   {
+    balance = balance - withdrawal;
+    return balance;
+   }
+   public double deposit(double amountin)
+   {
+    balance = balance + amountin;
+    return balance;
+   }
+    public double calculateInterest()
+  {
+    double monRate;
+
+    monRate= interest / 12;
+    interest = balance * monRate;
+    
+    balance = balance + interest;
+    return balance;
+  }
+  
+  public double getTotalDeposits()
+  {
+    return balance;
+  }
+  public double getTotalWithdrawals()
+  {
+    return balance;
+  }
+ public double getTotalInterest()
+  {
+    return balance;
+  }
 }
+
